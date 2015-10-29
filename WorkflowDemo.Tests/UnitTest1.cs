@@ -4,7 +4,6 @@ using System.Activities;
 using System.Collections.Generic;
 using System.Linq;
 using System.Activities.Statements;
-using Microsoft.VisualBasic.Activities;
 using Microsoft.CSharp.Activities;
 using System.Diagnostics;
 
@@ -38,6 +37,53 @@ namespace WorkflowDemo.Tests
             invoker.Invoke();
 
             Assert.IsTrue(sw.Elapsed.TotalSeconds >= 5);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(InvalidWorkflowException))]
+        public void VullenVanInArgumentsVanuitCode1()
+        {
+            var activity = new Activity3
+            {
+                Input = new Course
+                {
+                    Id = 1
+                }
+            };
+
+            var invoker = new WorkflowInvoker(activity);
+
+            var output = invoker.Invoke();
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(NotSupportedException))]
+        public void VullenVanInArgumentsVanuitCode2()
+        {
+            var activity = new Activity3
+            {
+                Input = new CSharpValue<Course>(@"new Course
+                {
+                    Id = 1
+                }")
+            };
+
+            var invoker = new WorkflowInvoker(activity);
+            
+            var output = invoker.Invoke();
+        }
+
+        [TestMethod]
+        public void VullenVanInArgumentsVanuitCode3 ()
+        {
+            var activity = new Activity3();
+            var invoker = new WorkflowInvoker(activity);
+            var arguments = new Dictionary<string, object>
+            {
+                { "Input", new Course { Id = 1 } }
+            };
+
+            var output = invoker.Invoke(arguments);
         }
     }
 }
