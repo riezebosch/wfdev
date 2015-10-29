@@ -1,0 +1,1535 @@
+﻿.fx
+{
+    position: absolute;
+}
+
+body
+{
+    font-size: 9pt;
+    cursor: default;
+    margin: 0px 0px 0px 0px;
+    color: black;
+    text-align: center;
+    font-family: "Segoe UI" , Arial;
+    background: #323232 url(darkBG.jpg) repeat-y top center;
+}
+
+fieldset 
+{
+	border: solid 1px #999999;
+	padding: 10px;
+}
+
+a:link, a:visited, a:active, a
+{
+    color: #000000;
+    text-decoration: underline;
+}
+
+a:hover
+{
+    color: #600000 ;
+    text-decoration: underline;
+}
+
+a.nav:active, a.nav:link, a.nav:visited
+{
+    color: #FFFFFF;
+    padding-right: 35px;
+    font-size: 11pt;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a.nav:hover
+{
+    color: #FFFFFF;
+    padding-right: 35px;
+    font-size: 11pt;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+a.subnav:active, a.subnav:link, a.subnav:visited
+{
+    color: #FFFFFF;
+    padding-right: 35px;
+    font-size: 8pt;
+    text-decoration: none;
+}
+
+a.subnav:hover
+{
+    color: #FFFFFF;
+    padding-right: 35px;
+    font-size: 8pt;
+    text-decoration: underline;
+}
+
+ul.features
+{
+    list-style-image: url(../../checkmark18.png);
+    list-style-position:inside;
+    padding-left:10px;
+}
+
+h1
+{
+    margin-top: 0px;
+    font-family: "Segoe UI" , Arial;
+    font-size: x-large;
+    color: #000000;
+    font-weight: bold;
+    width: 100%;
+    height: 48px;
+    vertical-align: middle;
+    text-align: left;
+}
+
+h1.frontPageTitle
+{
+    font-family: "Segoe UI" , Arial;
+    font-weight: bold;
+    font-size: x-large;
+    margin-bottom: 12px;
+    margin-top: inherit;
+    color: inherit;
+    background-color: inherit;
+    height: inherit;
+    vertical-align: inherit;
+    text-indent: inherit;
+}
+
+h2
+{
+    font-size: 12pt;
+    margin-bottom: 2px;
+    color: #000000;
+    font-family: "Segoe UI" , Arial;
+    font-weight: bold;
+}
+
+h2.frontPageSubtitle
+{
+    font-size: 11pt;
+    margin-bottom: 12px;
+    margin-top: 0px;
+    color: #000000;
+}
+
+h3
+{
+    margin-top: 0px;
+    margin-bottom: 12px;
+}
+
+#testimonials h3
+{
+    font-weight: normal;
+}
+
+p
+{
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+Table
+{
+    color: #000000;
+    font-family: "Segoe UI" , Arial;
+    font-size: 9pt;
+    text-align: justify;
+}
+
+img
+{
+    border: 0px;
+}
+
+img.box
+{
+    border: solid 1px black;
+}
+
+td
+{
+    vertical-align: top;
+}
+
+.centered
+{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.center
+{
+    text-align:center;
+}
+
+.rightAligned
+{
+    text-align: right;
+}
+
+.normalText
+{
+    font-size: medium;
+}
+
+
+/* Table Cell Styles for Corners */
+
+Table.contentTable
+{
+    font-family: "Segoe UI" , Arial;
+    font-size: medium;
+    width: 960px;
+    text-align: justify;
+}
+
+TD.dGreenFill
+{
+    background-color: #92A399;
+}
+
+TD.dGreenFillMiddleFixedHeight
+{
+    height: 258px;
+    background-color: #92A399;
+}
+
+TD.dGreenFillMiddle
+{
+    background-color: #92A399;
+}
+
+TD.corner_dGreen_topLeft
+{
+    height: 17px;
+    width: 17px;
+    background: url(corner_dGreen_topLeft.gif) top left no-repeat;
+}
+
+TD.corner_dGreen_topRight
+{
+    height: 17px;
+    width: 17px;
+    background: url(corner_dGreen_topRight.gif) top left no-repeat;
+}
+
+TD.corner_dGreen_bottomLeft
+{
+    height: 17px;
+    width: 17px;
+    background: url(corner_dGreen_bottomLeft.gif) top left no-repeat;
+}
+
+TD.corner_dGreen_bottomRight
+{
+    height: 17px;
+    width: 17px;
+    background: url(corner_dGreen_bottomRight.gif) top left no-repeat;
+}
+
+Table.secondaryTable
+{
+    width: 268px;
+    text-align: justify;
+    margin-left: 8px;
+}
+
+Table.secondaryTableNarrow
+{
+    width: 245px;
+    text-align: justify;
+}
+
+Table.secondaryTablePricing
+{
+    width: 360px;
+    text-align: justify;
+}
+
+Table.secondaryTableUpcomingPsodCourses
+{
+    width: 245px;
+    text-align: justify;
+}
+
+TD.lGreenFill
+{
+    background-color: #bac5ba;
+}
+
+TD.corner_lGreen_topLeft
+{
+    height: 17px;
+    width: 17px;
+    background: url(corner_lGreen_topLeft.jpg) top left no-repeat;
+}
+
+TD.corner_lGreen_topRight
+{
+    height: 17px;
+    width: 17px;
+    background: url(corner_lGreen_topRight.jpg) top left no-repeat;
+}
+
+TD.corner_lGreen_bottomLeft
+{
+    height: 17px;
+    width: 17px;
+    background: url(corner_lGreen_bottomLeft.jpg) top left no-repeat;
+}
+
+TD.corner_lGreen_bottomRight
+{
+    height: 17px;
+    width: 17px;
+    background: url(corner_lGreen_bottomRight.jpg) top left no-repeat;
+}
+
+Table.tertiaryTable
+{
+    width: 245px;
+    text-align: justify;
+    font-family: "Segoe UI" , Arial;
+}
+
+Table.tertiaryTableFreeSampleModules
+{
+    text-align: justify;
+    font-family: "Segoe UI" , Arial;
+    font-size: medium;
+    width: 360px;
+}
+
+Table.tertiaryTableNotFixed
+{
+    text-align: justify;
+    font-family: "Segoe UI" , Arial;
+}
+
+Table.tertiaryTableOltBookmark
+{
+    text-align: justify;
+    font-family: "Segoe UI" , Arial;
+    width: 763px;
+}
+
+
+.upcomingOfferingsTitle
+{
+    text-align: left;
+}
+
+TD.lBrownFill
+{
+    background-color: #ECE9D8;
+}
+
+TD.lBrownFillMiddleFixedHeight
+{
+    height: 186px;
+    background-color: #ECE9D8;
+}
+
+TD.lBrownFillMiddle
+{
+    background-color: #ECE9D8;
+}
+
+TD.corner_lBrown_topLeft
+{
+    height: 17px;
+    width: 17px;
+    background: url(corner_lBrown_topLeft.gif) top left no-repeat;
+}
+
+TD.corner_lBrown_topRight
+{
+    height: 17px;
+    width: 17px;
+    background: url(corner_lBrown_topRight.gif) top left no-repeat;
+}
+
+TD.corner_lBrown_bottomLeft
+{
+    height: 17px;
+    width: 17px;
+    background: url(corner_lBrown_bottomLeft.gif) top left no-repeat;
+}
+
+TD.corner_lBrown_bottomRight
+{
+    height: 17px;
+    width: 17px;
+    background: url(corner_lBrown_bottomRight.gif) top left no-repeat;
+}
+
+/* gray box styles */
+TD.grayFill
+{
+    background-color: #A0A0A0;
+}
+
+TD.grayFillMiddle
+{
+    background-color: #A0A0A0;
+    font-size: medium;
+}
+
+TD.corner_gray_topLeft
+{
+    height: 17px;
+    width: 17px;
+    background: url(corner_gray_topLeft.gif) top left no-repeat;
+}
+
+TD.corner_gray_topRight
+{
+    height: 17px;
+    width: 17px;
+    background: url(corner_gray_topRight.gif) top left no-repeat;
+}
+
+TD.corner_gray_bottomLeft
+{
+    height: 17px;
+    width: 17px;
+    background: url(corner_gray_bottomLeft.gif) top left no-repeat;
+}
+
+TD.corner_gray_bottomRight
+{
+    height: 17px;
+    width: 17px;
+    background: url(corner_gray_bottomRight.gif) top left no-repeat;
+}
+/*******************/
+
+/* dark gray box styles */
+TD.dGrayFill
+{
+    background-color: #404040;
+}
+
+TD.dGrayFillMiddle
+{
+    background-color: #404040;
+}
+
+TD.corner_dGray_topLeft
+{
+    height: 17px;
+    width: 17px;
+    background: url(corner_dGray_topLeft.gif) top left no-repeat;
+}
+
+TD.corner_dGray_topRight
+{
+    height: 17px;
+    width: 17px;
+    background: url(corner_dGray_topRight.gif) top left no-repeat;
+}
+
+TD.corner_dGray_bottomLeft
+{
+    height: 17px;
+    width: 17px;
+    background: url(corner_dGray_bottomLeft.gif) top left no-repeat;
+}
+
+TD.corner_dGray_bottomRight
+{
+    height: 17px;
+    width: 17px;
+    background: url(corner_dGray_bottomRight.gif) top left no-repeat;
+}
+/*******************/
+
+TD.secondaryTableContainer
+{
+    padding-right: 9px;
+}
+
+TD.centerAlignWithSpace
+{
+    text-align: center;
+    padding-bottom: 8px;
+    padding-top: 4px;
+}
+
+TD.centerAlign
+{
+    text-align: center;
+}
+
+TD.leftSpace
+{
+    padding-left: 40px;
+}
+TD.rightAlign
+{
+    text-align: right;
+}
+
+TD.rightAlignTopSpace
+{
+    text-align: right;
+    padding-top: 8px;
+}
+
+/* Header Styles */
+
+div.topLinksContainer
+{
+    height: 32px;
+    text-align: right;
+    width: 752px;
+    padding-top: 3px;
+}
+
+div.topHomeLink
+{
+    position: absolute;
+    height: 71px;
+    width: 271px;
+    top: 12px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.topLinksContainer a:active, .topLinksContainer a:link, .topLinksContainer a:visited
+{
+    color: #000000;
+    text-decoration: none;
+}
+
+.topLinksContainer a:hover
+{
+    color: #000000;
+    text-decoration: underline;
+}
+
+div.searchContainer
+{
+    visibility: hidden;
+    position: absolute;
+    left: 540px;
+    top: 0px;
+    padding-top: 4px;
+    padding-right: 5px;
+}
+
+.searchLink
+{
+    font-size: 9pt;
+    font-family: "Segoe UI" , Arial;
+    padding-right: 5px;
+    vertical-align: middle;
+}
+
+.searchText
+{
+    width: 80px;
+    height: 12px;
+    font-size: 9pt;
+    font-family: "Segoe UI" , Arial;
+    padding-right: 25px;
+    vertical-align: middle;
+}
+
+div.copyright
+{
+    font-size: 8pt;
+    color: #dfdfdf;
+    font-family: "Segoe UI" , Arial;
+}
+
+.copyright a:active, .copyright a:link, .copyright a:visited
+{
+    color: #dfdfdf;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+.copyright a:hover
+{
+    color: #dfdfdf;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: underline;
+}
+
+a.nukeationLink:active, a.nukeationLink:link, a.nukeationLink:visited
+{
+    color: #dfdfdf;
+    padding-right: 0px;
+    padding-left: 0px;
+    text-decoration: none;
+}
+
+a.nukeationLink:hover
+{
+    color: #dfdfdf;
+    padding-right: 0px;
+    padding-left: 0px;
+    text-decoration: underline;
+}
+
+/* Use inline style instead of this class (FireFox bug) */
+div.mainNesting1
+{
+    height: 157px;
+    background: url(topBar.jpg) top left repeat-x;
+    text-align: center;
+}
+
+/* Use inline style instead of this class (FireFox bug) */
+div.mainNesting2
+{
+    height: 157px;
+    background: url(title.jpg) top left no-repeat;
+    width: 960px;
+}
+
+div.mainNavigationContainer
+{
+    padding-top: 80px;
+}
+div.subNavigationContainer
+{
+    padding-top: 0px;
+}
+div.instructorBox
+{
+    width: 100%;
+    height: 111px; /*background: url(instructorBox.jpg) top left no-repeat;*/
+    position: relative;
+    text-align: center;
+}
+
+div.instructorBoxForStaffPage
+{
+    width: 100%;
+    height: 111px;
+    position: relative;
+    text-align: center;
+}
+
+
+.instructorImage
+{
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    height: 103px;
+    width: 108px;
+}
+
+.mvpInstructorImage
+{
+    position: absolute;
+    left: 90px;
+    top: 85px;
+    height: 28px;
+    width: 29px;
+}
+
+.mvpInstructorImageForStaffPage
+{
+    position: absolute;
+    left: 83px;
+    top: 74px;
+    height: 28px;
+    width: 29px;
+}
+
+div.slideshowBox
+{
+    width: 231px;
+    height: 157px;
+    background: url(slideshowBox.jpg) top left no-repeat;
+    position: relative;
+}
+
+div.frontPageAdBox
+{
+    width: 231px;
+    height: 225px;
+    position: relative;
+}
+
+.slideshowImage
+{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 216px;
+    height: 143px;
+}
+
+.slideshowBoxContainer
+{
+    width: 240px;
+}
+
+.oltBgImage
+{
+    background: url(olt.png) top left no-repeat ;
+}
+
+.oltBgImageLowerRight
+{
+    background: url(olt.png) top left no-repeat ;
+    background-position: bottom right;
+}
+
+.oltBgImageSmall
+{
+    background: url(oltsmall.png) top left no-repeat;
+}
+.iltBgImage
+{
+    background: url(ilt.png) top left no-repeat;
+}
+
+.Hand
+{
+    cursor: pointer;
+}
+
+.splashLeft
+{
+    background: #374341 url(superDarkGreenLeft.jpg) top left no-repeat;
+    width: 258px;
+    height: 148px;
+    color: #ffffff;
+    text-align: left;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.splashLeftHighlighted
+{
+    background: #10190E url(superDarkGreenLeftHighlighted.jpg) top left no-repeat;
+    width: 258px;
+    height: 148px;
+    color: #ffffff;
+    text-align: left;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.splashLeftBeigeBackground
+{
+    background: #374341 url(superDarkGreenLeftBeigeBackground.jpg) top left no-repeat;
+    width: 258px;
+    height: 148px;
+    color: #ffffff;
+    text-align: left;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.splashLeftBeigeBackgroundHighlighted
+{
+    background: #10190E url(superDarkGreenLeftBeigeBackgroundHighlighted.jpg) top left no-repeat;
+    width: 258px;
+    height: 148px;
+    color: #ffffff;
+    text-align: left;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.white  
+{
+    color: #ffffff;
+}
+.padded
+{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.splashRight
+{
+    background: #374341 url(superDarkGreenRight.jpg) top right no-repeat;
+    width: 258px;
+    height: 148px;
+    color: #ffffff;
+    text-align: right;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.splashRightHighlighted
+{
+    background: #10190E url(superDarkGreenRightHighlighted.jpg) top right no-repeat;
+    width: 258px;
+    height: 148px;
+    color: #ffffff;
+    text-align: right;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.splashRightBeigeBackground
+{
+    background: #374341 url(superDarkGreenRightBeigeBackground.jpg) top right no-repeat;
+    width: 258px;
+    height: 148px;
+    color: #ffffff;
+    text-align: right;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.splashRightBeigeBackgroundHighlighted
+{
+    background: #10190E url(superDarkGreenRightBeigeBackgroundHighlighted.jpg) top right no-repeat;
+    width: 258px;
+    height: 148px;
+    color: #ffffff;
+    text-align: right;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.splashMiddle
+{
+    background: #374341;
+    width: 258px;
+    height: 148px;
+    color: #ffffff;
+    text-align: right;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.splashMiddleHighlighted
+{
+    background: #10190E;
+    width: 258px;
+    height: 148px;
+    color: #ffffff;
+    text-align: right;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.themeContainer
+{
+    padding-top: 5px;
+    padding-right: 15px;
+}
+
+.phoneNumberContainer
+{
+    padding-top: 10px;
+    padding-right: 23px;
+}
+
+.spanLink
+{
+    cursor: pointer;
+}
+
+.modulesDiv
+{
+    height: 600px;
+}
+
+.ratingStar
+{
+    font-size: 0pt;
+    width: 13px;
+    height: 12px;
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+    display: block;
+    background-repeat: no-repeat;
+}
+
+.filledRatingStar
+{
+    background-image: url(ratings/FilledStar.png);
+}
+
+.emptyRatingStar
+{
+    background-image: url(ratings/EmptyStar.png);
+}
+
+.savedRatingStar
+{
+    background-image: url(ratings/SavedStar.png);
+}
+
+.cloudTags a:active, .cloudTags a:link, .cloudTags a:visited
+{
+    font-family: Segoe UI, Arial;
+    text-decoration: none;
+}
+
+/* Search Styles */
+
+.searchTextBox
+{
+    width: 182px;
+}
+
+#CommonSearch
+{
+    float: right;
+}
+
+.CommonSearchArea
+{
+    width: 248px;
+    overflow: hidden;
+    float: left;
+}
+
+.CommonSearchContent
+{
+    padding: 3px 8px 0 8px;
+    margin: 0;
+    border-left: solid 1px;
+    border-right: solid 1px;
+    white-space: nowrap;
+    position: relative;
+    height: .8em;
+}
+
+.CommonSearchContentInner
+{
+    position: absolute;
+    top: -5px;
+    width: 236px;
+}
+
+.CommonSearchContent input
+{
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+    width: 214px;
+    background-color: #f7f7f7;
+    font-family: "Segoe UI" , Arial;
+    color: Gray;
+}
+
+.CommonSearchContent input.CommonSearchButton
+{
+    background-color: transparent;
+    background-image: url('../../search-button.gif');
+    background-position: 0px 3px;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 21px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.CommonSearchRoundTop, .CommonSearchRoundBottom
+{
+    height: 5px;
+}
+
+.CommonSearchRoundTop .r1, .CommonSearchRoundTop .r2, .CommonSearchRoundTop .r3, .CommonSearchRoundTop .r4, .CommonSearchRoundBottom .r1, .CommonSearchRoundBottom .r2, .CommonSearchRoundBottom .r3, .CommonSearchRoundBottom .r4
+{
+    border-left: solid 1px;
+    border-right: solid 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.CommonSearchRoundTop .r1, .CommonSearchRoundBottom .r4
+{
+    margin: 0 5px;
+    height: 0;
+    border-top: solid 1px;
+    border-left-width: 0;
+    border-right-width: 0;
+}
+.CommonSearchRoundTop .r2, .CommonSearchRoundBottom .r3
+{
+    margin: 0 3px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+}
+.CommonSearchRoundTop .r3, .CommonSearchRoundBottom .r2
+{
+    margin: 0 2px;
+}
+.CommonSearchRoundTop .r4, .CommonSearchRoundBottom .r1
+{
+    margin: 0 1px;
+    height: 2px;
+}
+
+.CommonSearchRoundTop .r1, .CommonSearchRoundTop .r2, .CommonSearchRoundTop .r3, .CommonSearchRoundTop .r4, .CommonSearchRoundBottom .r1, .CommonSearchRoundBottom .r2, .CommonSearchRoundBottom .r3, .CommonSearchRoundBottom .r4, .CommonSearchContent
+{
+    background-color: #f7f7f7;
+    border-color: #bbb;
+}
+
+/* these are for the subscribe box */
+
+.CommonSearchArea2
+{
+    width: 208px;
+    overflow: hidden;
+    float: left;
+}
+
+.CommonSearchContent2
+{
+    padding: 3px 8px 0 8px;
+    margin: 0;
+    border-left: solid 1px;
+    border-right: solid 1px;
+    white-space: nowrap;
+    position: relative;
+    height: .8em;
+}
+
+.CommonSearchContentInner2
+{
+    position: absolute;
+    top: -5px;
+    left: 7px;
+    width: 196px;
+}
+
+.CommonSearchContent2 input
+{
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+    width: 174px;
+    background-color: #f7f7f7;
+    font-family: "Segoe UI" , Arial;
+    color: Gray;
+}
+
+.CommonSearchContent2 input.CommonSearchButton2
+{
+    background-color: transparent;
+    background-image: url('../../check-icon-14.png');
+    background-position: 0px 5px;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 21px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.CommonSearchContent2
+{
+    background-color: #f7f7f7;
+    border-color: #bbb;
+}
+
+/* image drop shadows */
+
+.img-shadow
+{
+    float: left;
+    background: url(shadowAlpha.png) no-repeat bottom right !important;
+    background: url(shadow.gif) no-repeat bottom right;
+    margin: 10px 0 0 10px !important;
+    margin: 10px 0 0 5px;
+}
+
+.img-shadow img
+{
+    display: block;
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #a9a9a9;
+    margin: -6px 6px 6px -6px;
+    padding: 4px;
+}
+
+.MaxCharsExtenderFlyout
+{
+    background-image: url(misc/maxCharsExtenderBackground.jpg);
+    background-repeat: no-repeat;
+    color: White;
+    padding: 4px;
+    width: 300px;
+}
+
+/* RoundedRectangle styles */
+td.rr_DarkGreen_Fill
+{
+    background-color: #92A399;
+}
+
+td.rr_DarkGreen_TopLeft
+{
+    height: 17px;
+    width: 17px;
+    background: url(corner_DarkGreen_topLeft.gif) top left no-repeat;
+}
+
+td.rr_DarkGreen_TopRight
+{
+    height: 17px;
+    width: 17px;
+    background: url(corner_DarkGreen_topRight.gif) top left no-repeat;
+}
+
+td.rr_DarkGreen_BottomLeft
+{
+    height: 17px;
+    width: 17px;
+    background: url(corner_DarkGreen_bottomLeft.gif) top left no-repeat;
+}
+
+td.rr_DarkGreen_BottomRight
+{
+    height: 17px;
+    width: 17px;
+    background: url(corner_DarkGreen_bottomRight.gif) top left no-repeat;
+}
+
+td.rr_LightGreen_Fill
+{
+    background-color: #bac5ba;
+}
+
+td.rr_LightGreen_TopLeft
+{
+    height: 17px;
+    width: 17px;
+    background: url(corner_lGreen_topLeft.jpg) top left no-repeat;
+}
+
+td.rr_LightGreen_TopRight
+{
+    height: 17px;
+    width: 17px;
+    background: url(corner_lGreen_topRight.jpg) top left no-repeat;
+}
+
+td.rr_LightGreen_BottomLeft
+{
+    height: 17px;
+    width: 17px;
+    background: url(corner_lGreen_bottomLeft.jpg) top left no-repeat;
+}
+
+td.rr_LightGreen_BottomRight
+{
+    height: 17px;
+    width: 17px;
+    background: url(corner_lGreen_bottomRight.jpg) top left no-repeat;
+}
+
+td.rr_PaleBeige_Fill
+{
+    background-color: #ECE9D8;
+}
+
+td.rr_PaleBeige_TopLeft
+{
+    height: 17px;
+    width: 17px;
+    background: url(corner_PaleBeige_topLeft.gif) top left no-repeat;
+}
+
+td.rr_PaleBeige_TopRight
+{
+    height: 17px;
+    width: 17px;
+    background: url(corner_PaleBeige_topRight.gif) top left no-repeat;
+}
+
+td.rr_PaleBeige_BottomLeft
+{
+    height: 17px;
+    width: 17px;
+    background: url(corner_PaleBeige_bottomLeft.gif) top left no-repeat;
+}
+
+td.rr_PaleBeige_BottomRight
+{
+    height: 17px;
+    width: 17px;
+    background: url(corner_PaleBeige_bottomRight.gif) top left no-repeat;
+}
+
+td.rr_White_Fill
+{
+    background-color: #FFFFFF;
+}
+
+td.rr_White_TopLeft
+{
+    height: 17px;
+    width: 17px;
+    background: url(corner_White_topLeft.gif) top left no-repeat;
+}
+
+td.rr_White_TopRight
+{
+    height: 17px;
+    width: 17px;
+    background: url(corner_White_topRight.gif) top left no-repeat;
+}
+
+td.rr_White_BottomLeft
+{
+    height: 17px;
+    width: 17px;
+    background: url(corner_White_bottomLeft.gif) top left no-repeat;
+}
+
+td.rr_White_BottomRight
+{
+    height: 17px;
+    width: 17px;
+    background: url(corner_White_bottomRight.gif) top left no-repeat;
+}
+
+/*****************************new header styles***************/
+/* PS2010 Header Styles */
+
+.centered
+{
+    text-align: center;
+}
+
+.newheader
+{
+    height: 156px;
+    width: 708px;
+    background: url(ps2010bg.png) top left no-repeat;
+    float: left;
+}
+
+
+.newlogin
+{
+    height: 156px;
+    width: 248px;
+    background: url(ps2010login.png) top left no-repeat;
+    float: right;
+    text-align: right;
+}
+
+body.loginFrameBody 
+{
+    background: #000000 url(darkBG.jpg) repeat-y scroll -870px 0px;
+}
+
+.loginPanel
+{
+    background-image: url(ps2010login.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+    padding-top: 13px;
+    color: White;
+    height: 156px;
+    width: 248px;
+    float: right;
+    text-align: center;
+}
+
+.subscribebtn
+{
+    background: url(subscribebtn.png) top left no-repeat;
+    width: 73px;
+    height: 25px;
+    padding-top: 3px;
+    display:inline-block;
+    text-align:center;
+    font-size: 10pt;
+    font-weight: bold;
+    margin-left:3px;
+    margin-right:3px;
+}
+
+.subscribebtnProcessing
+{
+    background: url(greenbtn.png) top left no-repeat;
+    width: 73px;
+    height: 25px;
+    padding-top: 3px;
+    display:inline-block;
+    text-align:center;
+    font-size: 10pt;
+    font-weight: bold;
+    margin-left:3px;
+    margin-right:3px;
+}
+
+.greenbtn
+{
+    background: url(greenbtn.png) top left no-repeat;
+    width: 73px;
+    height: 25px;
+    padding-top: 3px;
+    display:inline-block;
+    text-align:center;
+    font-size: 10pt;
+    font-weight: bold;
+    margin-left:3px;
+    margin-right:3px;
+}
+
+.compareplansbtn
+{
+    background: url(compareplansbtn.png) top left no-repeat;
+    width: 103px;
+    height: 25px;
+    font-size: 10pt;
+    font-weight: bold;
+    padding-top: 3px;
+    margin-top: -3px;
+}
+
+.widegreenbtn
+{
+    background: url(widegreenbtn.png) top left no-repeat;
+    width: 120px;
+    height: 25px;
+    padding-top: 3px;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+.headercontainer
+{
+    width: 960px;
+    margin-left: -480px;
+    left: 50%;
+    position: relative;
+    margin-top: 10px;
+    float:left;
+    margin-bottom:10px;
+}
+
+.headercontainerchrome
+{
+    width: 960px;
+    margin-left: -480px;
+    left: 50%;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+
+.headerLoginFrame
+{
+	width: 248px;
+	height: 156px;
+}
+
+.loginContent
+{
+    padding: 13px;
+    color: White;
+}
+
+.subscribebtn
+{
+    background: url(subscribebtn.png) top left no-repeat;
+    width: 73px;
+    height: 25px;
+    font-size: 10pt;
+    font-weight: bold;
+    padding-top: 3px;
+}
+.greenbtn
+{
+    background: url(greenbtn.png) top left no-repeat;
+    width: 73px;
+    height: 25px;
+    padding-top: 3px;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+.vmiddlealign
+{
+    padding-top: 5px;
+    width: 100%;
+    text-align: right;
+}
+
+a.nav2:active, a.nav2:link, a.nav2:visited
+{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a.nav2:hover
+{
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+a.nav3:active, a.nav3:link, a.nav3:visited
+{
+    color: #000;
+    text-decoration: none;
+}
+
+a.nav3:hover
+{
+    color: #000;
+    text-decoration: underline;
+}
+
+.altLink
+{
+    text-align: right;
+    width: 100%;
+}
+
+
+.buttonContainer
+{
+    padding-left: 7px;
+}
+
+.menuContainer
+{
+    padding-top: 95px;
+}
+
+.mainMenu
+{
+    text-align: left;
+    font-size: 11pt;
+    padding-left: 210px;    
+}
+
+.menuCell
+{
+    height: 31px;
+    display: table-cell;
+    padding-top: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.menuCellOff
+{
+    background: none;
+}
+.menuCellOn
+{
+    background: url(menubg.jpg) top left repeat-x;
+}
+
+.menuItems
+{
+    margin-top: 3px;
+    text-align: center;
+}
+.menuItems a, .menuItems a:active, .menuItems a:link, .menuItems a:visited
+{
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 4px;
+    padding-right: 4px;
+}
+
+.menuItems a:hover
+{
+    color: #FFCC00;
+    text-decoration: none;
+    margin-left: 4px;
+    padding-right: 4px;
+}
+
+.menuHidden
+{
+    display: none;
+}
+
+.menuVisible
+{
+    display: inline;
+    padding-left: 8px;
+}
+
+.headerLoginFrameContainer 
+{
+    background-image: url(ps2010login.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+    height: 156px;
+    width: 248px;
+    float: right;
+}
+
+.menuItemsRight
+{
+    margin-top: 3px;
+    text-align: right;
+    margin-right: 60px;
+}
+
+.menuItemsRight a, .menuItemsRight a:active, .menuItemsRight a:link, .menuItemsRight a:visited
+{
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 4px;
+    padding-right: 4px;
+}
+
+.menuItemsRight a:hover
+{
+    color: #FFCC00;
+    text-decoration: none;
+    margin-left: 4px;
+    padding-right: 4px;
+}
+
+
+.largePSButton
+{
+    padding: 11px 10px 0px 10px; 
+    vertical-align: middle;
+    height: 32px;
+    font-size:12pt;
+    font-weight:bold;
+    text-decoration:none;
+    color:White;
+}
+
+.smallPSButton
+{    
+    display:table-cell;
+    vertical-align: middle;
+    height: 20px;
+    font-size:8pt;
+    font-weight:normal;
+    text-decoration:underline;
+    color:Black;
+    background-color:#7C8B83;
+}
+
+.question
+{
+    font-size: small;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.answer
+{
+    font-size:small;
+    margin-bottom: 20px;
+}

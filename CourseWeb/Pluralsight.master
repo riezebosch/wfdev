@@ -1,0 +1,221 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Pluralsight.master.cs"
+    Inherits="CourseWeb.Pluralsight" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Pluralsight .NET Training</title>
+    <link href="images/Dark.css" type="text/css" rel="stylesheet">
+    <link href="images/ilt.css" type="text/css" rel="stylesheet">
+    <link href="images/olt.css" type="text/css" rel="stylesheet">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table style="margin-left: auto; margin-right: auto; margin-top: 5px">
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="newheader">
+                            <div class="menuContainer">
+                                <div class="mainMenu">
+                                    <table cellpadding="0" cellspacing="0" border="0" style="font-size: 11pt">
+                                        <tbody>
+                                            <tr>
+                                                <td id="mnHome" class="menuCellOff menuCell">
+                                                    <a href="default.aspx" class="nav2">home</a>
+                                                </td>
+                                                <td id="mnOD" class="menuCellOn menuCell">
+                                                    <a href="http://www.pluralsight.com/main/olt/default.aspx">on-demand!</a>
+                                                </td>
+                                                <td id="mnClassroom" class="menuCellOff menuCell">
+                                                    <a href="http://www.pluralsight.com/main/ilt/courses.aspx" class="nav2">classroom</a>
+                                                </td>
+                                                <td id="mnResources" class="menuCellOff menuCell">
+                                                    <a href="http://www.pluralsight.com/main/resources.aspx" class="nav2">community</a>
+                                                </td>
+                                                <td id="mnAbout" class="menuCellOff menuCell">
+                                                    <a href="http://www.pluralsight.com/main/about/default.aspx" class="nav2">about</a>
+                                                </td>
+                                                <td id="mnContact" class="menuCellOff menuCell">
+                                                    <a href="http://www.pluralsight.com/main/contact.aspx" class="nav2">contact</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="menuItems">
+                                    <div id="menuOD" class="menuVisible">
+                                        <a href="http://www.pluralsight.com/main/olt/subscriptions.aspx">subscription plans
+                                        </a><a href="http://www.pluralsight.com/main/olt/default.aspx">explore library</a>
+                                        <a href="http://www.pluralsight.com/main/olt/subscribe/requestguestpass.aspx">free guest
+                                            pass</a> <a href="http://www.pluralsight.com/main/olt/howtovideos.aspx">how-to videos</a>
+                                        <a href="http://www.pluralsight.com/main/olt/tutorials.aspx">tutorials</a> <a href="http://www.pluralsight.com/main/olt/courses.aspx">
+                                            courses</a> <a href="http://www.pluralsight.com/main/olt/multiuser.aspx">multi-user
+                                                pricing</a> <a href="http://www.pluralsight.com/main/olt/faq.aspx">FAQ</a></div>
+                                    <div id="menuClassroom" class="menuHidden">
+                                        <a href="http://www.pluralsight.com/main/ilt/courses.aspx" id="ctl00_A8">curriculum</a>
+                                        <a href="http://www.pluralsight.com/main/ilt/schedule.aspx" id="ctl00_A9">public schedule</a>
+                                        <a href="http://www.pluralsight.com/main/about/instructors.aspx" id="ctl00_A10">technical
+                                            team</a>
+                                    </div>
+                                </div>
+                                <div class="menuItemsRight">
+                                    <div id="menuResources" class="menuHidden">
+                                        <a href="http://www.pluralsight.com/main/pluralcast/default.aspx">pluralcast</a>
+                                        <a href="http://www.pluralsight.com/main/newsletter/default.aspx">newsletter</a>
+                                        <a href="http://www.pluralsight.com/community/blogs/default.aspx">blogs</a>
+                                    </div>
+                                    <div id="menuAbout" class="menuHidden">
+                                        <a href="http://www.pluralsight.com/main/about/management.aspx">management team</a>
+                                        <a href="http://www.pluralsight.com/main/about/instructors.aspx">technical team</a>
+                                        <a href="http://www.pluralsight.com/main/about/testimonials.aspx">testimonials</a>
+                                        <a href="http://www.pluralsight.com/main/about/partners.aspx">partners</a> <a href="http://www.pluralsight.com/main/about/affiliates.aspx">
+                                            affiliate program</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="headerLoginFrameContainer">
+                            <asp:LoginView runat="server" ID="logStat">
+                                <AnonymousTemplate>
+                                    <asp:Login ID="loginCtrl" runat="server">
+                                        <LayoutTemplate>
+                                            <div class="loginPanel">
+                                                <div id="pnlMain">
+                                                    Username:
+                                                    <asp:TextBox ID="UserName" Name="UserName" runat="server" BorderColor="Black" BorderStyle="Solid"
+                                                        Font-Size="Smaller" BorderWidth="1px" Height="15px" Width="140px"></asp:TextBox>
+                                                    <!-- <input name="txtHandle" type="text" id="txtHandle" 
+                                    style="border-color: Black; border-width: 1px; 
+                                        border-style: Solid; font-size: 8pt; height: 15px; width: 140px;">-->
+                                                    <br>
+                                                    <br>
+                                                    Password:&nbsp;
+                                                    <asp:TextBox runat="server" ID="Password" BorderColor="Black" TextMode="Password"
+                                                        BorderStyle="Solid" Font-Size="Smaller" BorderWidth="1px" Height="15px" Width="140px"></asp:TextBox>
+                                                    <!--<input name="txtPassword" type="password" id="txtPassword" style="border-color: Black;
+                                        border-width: 1px; border-style: Solid; font-size: 8pt; height: 15px; width: 140px;"> -->
+                                                    <br>
+                                                    <br>
+                                                    <table style="margin-left: auto; margin-right: auto">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="subscribebtn">
+                                                                        <a id="btnSubscribeOrUpgrade" class="nav3" href="CreateUser.aspx" target="_parent">subscribe</a></div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="greenbtn">
+                                                                        <asp:LinkButton runat="server" class="nav2" CommandName="Login">login</asp:LinkButton>
+                                                                        <!--<a id="btnLogInOrOut" class="nav2" href="https://www.pluralsight.com/main/olt/subscribe/Subscribe1.aspx">
+                                                            login</a>-->
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <p>
+                                                        <a id="lnkViewPlansOrOfficeHours" class="nav2" href="https://www.pluralsight.com/main/olt/subscriptions.aspx"
+                                                            target="_parent">plans</a>
+                                                    </p>
+                                                </div>
+                                                <!-- end login -->
+                                            </div>
+                                        </LayoutTemplate>
+                                    </asp:Login>
+                                </AnonymousTemplate>
+                                <LoggedInTemplate>
+                                    <div class="loginPanel">
+                                        <div id="pnlMain">
+                                            <div style='padding: 0px 10px 0px 10px'>
+                                                <p style='margin-top: 10px; font-size: larger; font-weight: bolder'>
+                                                    Welcome, <asp:LoginName runat="server" />!
+                                                </p>
+                                            </div>
+                                            <table style='margin-left: auto; margin-right: auto'>
+                                                <tr>
+                                                    <td>
+                                                    </td>
+                                                    <td>
+                                                        <div class='greenbtn'>
+                                                        
+                                                            <asp:LinkButton runat="server" CssClass="nav2" OnCommand="LogoutCommand" CommandName="Logout">Logout</asp:LinkButton> 
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            
+                                        </div>
+                                    </div>
+                                </LoggedInTemplate>
+                            </asp:LoginView>
+                            <!-- login control -->
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div align="center">
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <table class="" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                <tbody>
+                                    <tr>
+                                        <td class="rr_DarkGreen_TopLeft">
+                                        </td>
+                                        <td class="rr_DarkGreen_Fill">
+                                        </td>
+                                        <td class="rr_DarkGreen_TopRight">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="rr_LightGreen_Fill">
+                                        </td>
+                                        <td class="rr_LightGreen_Fill">
+                                            <div style="height: 10px">
+                                                &nbsp;</div>
+                                            <!--<br />-->
+                                            <!-- main content view -->
+                                            <asp:ContentPlaceHolder ID="mainContent" runat="server">
+                                            </asp:ContentPlaceHolder>
+                                            <!--<br />-->
+                                        </td>
+                                        <td class="rr_LightGreen_Fill">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="rr_DarkGreen_BottomLeft">
+                                        </td>
+                                        <td class="rr_DarkGreen_Fill">
+                                        </td>
+                                        <td class="rr_DarkGreen_BottomRight">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br />
+    <br />
+    <div class="copyright centered">
+        <span id="ctl00__phoneNumberLabel">+1.888.368.1240</span> | Pluralsight, LLC , 185
+        Lincoln St., Suite 305, Hingham, MA 02043-1741
+        <br>
+        <br>
+        Copyright © Pluralsight LLC. All rights reserved. <a href="http://www.pluralsight.com/main/privacy.aspx">
+            privacy policy</a>
+        <br>
+        <br>
+        designed by <a href="http://www.nukeation.com/" target="_blank" class="nukeationLink">
+            nukeation</a>
+    </div>
+    </form>
+</body>
+</html>

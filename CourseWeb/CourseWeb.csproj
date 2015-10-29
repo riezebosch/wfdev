@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{41C6D454-A087-46DB-A3E1-3342A57F3DD7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CourseWeb</RootNamespace>
+    <AssemblyName>CourseWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel.Activities" />
+    <Reference Include="System.ServiceModel.Channels" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\arrowBack.jpg" />
+    <Content Include="images\arrowBack.png" />
+    <Content Include="images\arrowNext.jpg" />
+    <Content Include="images\arrowNext.png" />
+    <Content Include="images\compareplansbtn.png" />
+    <Content Include="images\corner_DarkGreen_bottomLeft.gif" />
+    <Content Include="images\corner_DarkGreen_bottomRight.gif" />
+    <Content Include="images\corner_DarkGreen_topLeft.gif" />
+    <Content Include="images\corner_DarkGreen_topRight.gif" />
+    <Content Include="images\corner_dGreen_bottomLeft.gif" />
+    <Content Include="images\corner_dGreen_bottomLeft.jpg" />
+    <Content Include="images\corner_dGreen_bottomRight.gif" />
+    <Content Include="images\corner_dGreen_bottomRight.jpg" />
+    <Content Include="images\corner_dGreen_topLeft.gif" />
+    <Content Include="images\corner_dGreen_topLeft.jpg" />
+    <Content Include="images\corner_dGreen_topRight.gif" />
+    <Content Include="images\corner_dGreen_topRight.jpg" />
+    <Content Include="images\corner_gray_bottomLeft.gif" />
+    <Content Include="images\corner_gray_bottomRight.gif" />
+    <Content Include="images\corner_gray_topLeft.gif" />
+    <Content Include="images\corner_gray_topRight.gif" />
+    <Content Include="images\corner_lbrown_bottomLeft.gif" />
+    <Content Include="images\corner_lbrown_bottomRight.gif" />
+    <Content Include="images\corner_lbrown_topLeft.gif" />
+    <Content Include="images\corner_lbrown_topRight.gif" />
+    <Content Include="images\corner_lGreen_bottomLeft.jpg" />
+    <Content Include="images\corner_lGreen_bottomRight.jpg" />
+    <Content Include="images\corner_lGreen_topLeft.jpg" />
+    <Content Include="images\corner_lGreen_topRight.jpg" />
+    <Content Include="images\corner_PaleBeige_bottomLeft.gif" />
+    <Content Include="images\corner_PaleBeige_bottomRight.gif" />
+    <Content Include="images\corner_PaleBeige_topLeft.gif" />
+    <Content Include="images\corner_PaleBeige_topRight.gif" />
+    <Content Include="images\corner_White_bottomLeft.gif" />
+    <Content Include="images\corner_White_bottomRight.gif" />
+    <Content Include="images\corner_White_topLeft.gif" />
+    <Content Include="images\corner_White_topRight.gif" />
+    <Content Include="images\Dark.css" />
+    <Content Include="images\darkArrowBack.jpg" />
+    <Content Include="images\darkArrowNext.jpg" />
+    <Content Include="images\darkBG.jpg" />
+    <Content Include="images\darktitle.jpg" />
+    <Content Include="images\dGreen_more.jpg" />
+    <Content Include="images\dGreen_more.png" />
+    <Content Include="images\dGreen_New.jpg" />
+    <Content Include="images\fullScheduleButton.jpg" />
+    <Content Include="images\greenbtn.png" />
+    <Content Include="images\ILT.png" />
+    <Content Include="images\instructorBox.jpg" />
+    <Content Include="images\lbrown_more.jpg" />
+    <Content Include="images\menubg.jpg" />
+    <Content Include="images\new.gif" />
+    <Content Include="images\olt.png" />
+    <Content Include="images\oltsmall.png" />
+    <Content Include="images\olttitle.jpg" />
+    <Content Include="images\ps2010bg.png" />
+    <Content Include="images\ps2010login.png" />
+    <Content Include="images\registerNow.gif" />
+    <Content Include="images\saveASeat.gif" />
+    <Content Include="images\shadow.gif" />
+    <Content Include="images\shadowAlpha.png" />
+    <Content Include="images\slideshowBox.jpg" />
+    <Content Include="images\subscribebtn.png" />
+    <Content Include="images\superDarkGreenLeft.jpg" />
+    <Content Include="images\superDarkGreenLeftBeigeBackground.jpg" />
+    <Content Include="images\superDarkGreenLeftBeigeBackgroundHighlighted.jpg" />
+    <Content Include="images\superDarkGreenLeftHighlighted.jpg" />
+    <Content Include="images\superDarkGreenRight.jpg" />
+    <Content Include="images\superDarkGreenRightBeigeBackground.jpg" />
+    <Content Include="images\superDarkGreenRightBeigeBackgroundHighlighted.jpg" />
+    <Content Include="images\superDarkGreenRightHighlighted.jpg" />
+    <Content Include="images\themeDark.jpg" />
+    <Content Include="images\themeWhite.jpg" />
+    <Content Include="images\title.jpg" />
+    <Content Include="images\titleondemand.jpg" />
+    <Content Include="images\topBar.jpg" />
+    <Content Include="images\whiteLeft.jpg" />
+    <Content Include="images\whiteLeftBeige.jpg" />
+    <Content Include="images\whiteRight.jpg" />
+    <Content Include="images\whiteRightBeige.jpg" />
+    <Content Include="images\widegreenbtn.png" />
+    <Content Include="images\ilt.css" />
+    <Content Include="images\olt.css" />
+    <Content Include="SignIn.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pluralsight.master.cs">
+      <DependentUpon>Pluralsight.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pluralsight.master.designer.cs">
+      <DependentUpon>Pluralsight.master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registrations.aspx.cs">
+      <DependentUpon>Registrations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registrations.aspx.designer.cs">
+      <DependentUpon>Registrations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SignIn.aspx.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignIn.aspx.designer.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Contracts\Contracts.csproj">
+      <Project>{626F39FD-3EBC-4CB9-BA86-5C4369891A54}</Project>
+      <Name>Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CustomActivities\CustomActivities.csproj">
+      <Project>{56a0fb30-afbc-4b80-9505-b739551d3acb}</Project>
+      <Name>CustomActivities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="Pluralsight.master" />
+    <Content Include="Register.aspx" />
+    <Content Include="Registrations.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CourseDelivery.xamlx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>63540</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

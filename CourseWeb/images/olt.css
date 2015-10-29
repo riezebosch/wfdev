@@ -1,0 +1,103 @@
+﻿.CourseClipGrid
+{
+    width: 100%;
+}
+
+.CourseClipGrid table
+{
+    width: 100%;
+    font-family: "Segoe UI", Arial;
+    font-size:small;
+}
+
+.CourseClipGrid table thead tr th
+{
+    color: #F7F6F3;
+    background: #5D7B9D;
+}
+
+
+.CourseClipGrid table tbody tr.Alternate td
+{
+    background: #CCCCCC;
+}
+
+.CourseModuleGrid
+{
+    width: 100%;
+}
+
+.CourseModuleGrid table
+{
+    width: 100%;
+    font-family: "Segoe UI", Arial;
+    font-size:small;
+}
+
+.CourseModuleGrid table thead tr th
+{
+    color: #F7F6F3;
+    background: #5D7B9D;
+}
+
+.CourseModuleGrid table thead tr th a
+{
+}
+
+.CourseModuleGrid table tbody tr td
+{
+}
+
+.CourseModuleGrid table tbody tr.Alternate td
+{
+    background: #CCCCCC;
+}
+
+.CourseDescription
+{
+    font-family: "Segoe UI", Arial;
+	font-size:11pt;
+}
+
+.MediaLinksDiv
+{
+   text-align:left;
+}
+
+.CourseTitle
+{
+    font-family: "Segoe UI", Arial;
+    font-size: x-large;
+    color: #FFFFFF;
+    font-weight:bold;
+    background-color: #2E372C;
+    width:100%;
+    height:48px;
+    vertical-align:middle;
+    text-align:left;
+    text-indent:10px;
+}
+
+.ModuleTitle
+{
+    font-family: "Segoe UI", Arial;
+    font-size: large;
+    color: #FFFFFF;
+    font-weight:bold;
+    background-color: #2E372C;
+    width:100%;
+    height:38px;
+    vertical-align:middle;
+    text-align:left;
+    text-indent:10px;
+}
+
+.NextModule
+{
+    font-family: "Segoe UI", Arial;
+    font-size: small;
+    color: #FFFFFF;
+    width:100%;
+    vertical-align:middle;
+    text-align:right;
+}
