@@ -6,6 +6,8 @@ using System.Linq;
 using System.Activities.Statements;
 using Microsoft.CSharp.Activities;
 using System.Diagnostics;
+using System.Threading;
+using System.Dynamic;
 
 namespace WorkflowDemo.Tests
 {
@@ -84,6 +86,44 @@ namespace WorkflowDemo.Tests
             };
 
             var output = invoker.Invoke(arguments);
+        }
+
+        [TestMethod]
+        public void DemoVanTracking()
+        {
+            var tracker = new TestTrackingParticipant();
+            var application = new WorkflowApplication(new WriteLine { Text = "Hoi" });
+            application.Extensions.Add(tracker);
+
+            var ready = new AutoResetEvent(false);
+
+            application.Run();
+            application.Completed += (e) => ready.Set();
+
+            ready.WaitOne();
+
+            Assert.IsTrue(tracker.IsInvoked);
+            Assert.IsTrue(tracker.Records.Any());
+        }
+
+        [TestMethod]
+        public void DemoVanTracing()
+        {
+            var tracer = new TestTraceListener();
+            System.Diagnostics.Trace.Listeners.Add(tracer);
+
+            var application = new WorkflowApplication(new WriteLine { Text = "Hoi" });
+
+            var ready = new AutoResetEvent(false);
+
+            application.Run();
+            application.Completed += (e) => ready.Set();
+
+            ready.WaitOne();
+            tracer.Dispose();
+
+            // Deze werkt nog niet.
+            Assert.IsTrue(tracer.Messages.Any());
         }
     }
 }
