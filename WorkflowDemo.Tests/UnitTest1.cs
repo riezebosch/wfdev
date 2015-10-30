@@ -8,6 +8,8 @@ using Microsoft.CSharp.Activities;
 using System.Diagnostics;
 using System.Threading;
 using System.Dynamic;
+using System.IO;
+using System.Text;
 
 namespace WorkflowDemo.Tests
 {
@@ -109,21 +111,21 @@ namespace WorkflowDemo.Tests
         [TestMethod]
         public void DemoVanTracing()
         {
-            var tracer = new TestTraceListener();
-            System.Diagnostics.Trace.Listeners.Add(tracer);
-
+            var sb = new StringBuilder();
+            var writer = new StringWriter(sb);
             var application = new WorkflowApplication(new WriteLine { Text = "Hoi" });
 
+            // We just "know" that the WriteLine activity looks for an TextWriter extension on the context...
+            application.Extensions.Add(writer);
             var ready = new AutoResetEvent(false);
 
             application.Run();
             application.Completed += (e) => ready.Set();
 
             ready.WaitOne();
-            tracer.Dispose();
 
-            // Deze werkt nog niet.
-            Assert.IsTrue(tracer.Messages.Any());
+            Assert.IsFalse(string.IsNullOrEmpty(sb.ToString()));
+            Console.WriteLine(sb.ToString());
         }
     }
 }
